@@ -1,0 +1,174 @@
+.right-text {
+  text-align: right; }
+
+body {
+  background-color: #555555;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' x2='0' y1='1' y2='0' gradientTransform='rotate(15,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%230FF'/%3E%3Cstop offset='1' stop-color='%23CF6'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' x1='0' x2='0' y1='0' y2='1' gradientTransform='rotate(5,0.5,0.5)'%3E%3Cstop offset='0' stop-color='%23F00'/%3E%3Cstop offset='1' stop-color='%23FC0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23FFF' fill-opacity='0' stroke-miterlimit='10'%3E%3Cg stroke='url(%23a)' stroke-width='2'%3E%3Cpath transform='translate(-51.1 -29.2) rotate(-29.2 1409 581) scale(0.781)' d='M1409 581 1450.35 511 1490 581z'/%3E%3Ccircle stroke-width='4' transform='translate(-182.5 73) rotate(-14.6 800 450) scale(0.964)' cx='500' cy='100' r='40'/%3E%3Cpath transform='translate(-51.1 109.5) rotate(-182.5 401 736) scale(0.964)' d='M400.86 735.5h-83.73c0-23.12 18.74-41.87 41.87-41.87S400.86 712.38 400.86 735.5z'/%3E%3C/g%3E%3Cg stroke='url(%23b)' stroke-width='4'%3E%3Cpath transform='translate(438 43.8) rotate(-10.95 150 345) scale(1.073)' d='M149.8 345.2 118.4 389.8 149.8 434.4 181.2 389.8z'/%3E%3Crect stroke-width='8' transform='translate(109.5 -219) rotate(-262.8 1089 759)' x='1039' y='709' width='100' height='100'/%3E%3Cpath transform='translate(-29.2 -29.2) rotate(-43.8 1400 132) scale(0.635)' d='M1426.8 132.4 1405.7 168.8 1363.7 168.8 1342.7 132.4 1363.7 96 1405.7 96z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover; }
+
+#home-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 65px; }
+  #home-flex .home-flex-child .card {
+    width: 450px; }
+  #home-flex #user-dashboard {
+    width: 330px; }
+    #home-flex #user-dashboard #absolute-div-dashboard {
+      position: fixed; }
+    #home-flex #user-dashboard #dashboard-pic {
+      height: 250px;
+      width: 250px;
+      margin: auto; }
+      #home-flex #user-dashboard #dashboard-pic img {
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        margin-top: 10px; }
+    #home-flex #user-dashboard #friends-dashboard-count h5 {
+      font-size: 1rem; }
+  #home-flex #post-info {
+    width: 500px; }
+    #home-flex #post-info .card-body textarea {
+      width: 80%; }
+    #home-flex #post-info .card-body #flex-input {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center; }
+      #home-flex #post-info .card-body #flex-input div {
+        width: 200px; }
+    #home-flex #post-info .card-body #preview-image {
+      width: 200px;
+      height: 200px;
+      margin: auto;
+      margin-top: 15px; }
+      #home-flex #post-info .card-body #preview-image img {
+        width: 100%;
+        height: 100%; }
+  #home-flex #user-info {
+    width: 240px;
+    margin-right: 10px; }
+    #home-flex #user-info #absolute-div-user {
+      position: fixed;
+      right: 34px;
+      top: 70px;
+      height: 80vh;
+      overflow-y: scroll; }
+    #home-flex #user-info #absolute-div-user::-webkit-scrollbar {
+      width: 0;
+      display: none; }
+    #home-flex #user-info h4 {
+      margin: 0px;
+      text-align: center; }
+    #home-flex #user-info .list-group-item {
+      margin: 0px;
+      text-align: center;
+      padding: 7px 20px; }
+      #home-flex #user-info .list-group-item .profile-pic-holder {
+        width: 45px;
+        height: 45px;
+        margin: 0px 5px; }
+        #home-flex #user-info .list-group-item .profile-pic-holder img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50px; }
+      #home-flex #user-info .list-group-item .profile-name-holder {
+        margin: 0px;
+        padding-top: 5px; }
+        #home-flex #user-info .list-group-item .profile-name-holder a {
+          text-decoration: none;
+          color: black;
+          text-transform: capitalize; }
+        #home-flex #user-info .list-group-item .profile-name-holder a:hover {
+          color: #7e6c91; }
+
+.welcome {
+  height: auto; }
+  .welcome #carouselExampleCaptions {
+    top: 0px !important;
+    width: 100% !important;
+    height: 600px !important;
+    margin: auto; }
+    .welcome #carouselExampleCaptions #color-change {
+      color: white; }
+  .welcome .carousel-inner {
+    position: absolute !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: auto !important; }
+  .welcome #flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .welcome #flexbox .card {
+      box-shadow: 3px 5px 10px black; }
+    .welcome #flexbox .card-name {
+      font-size: large; }
+  .welcome #sign {
+    text-align: center;
+    height: 500px;
+    background-color: #BBBBBB;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%23cc0000' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%23aa0000' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23c6004c' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23a4003d' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23bf006c' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%239d0056' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%23b80084' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23970069' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%23b10098' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%238f007a' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%23aa00aa' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23880088' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 0px; }
+    .welcome #sign h1 {
+      margin: 30px 0px;
+      color: #e5edf2; }
+    .welcome #sign .signed {
+      margin: 50px 20px;
+      width: 100px;
+      width: 100px;
+      background-color: transparent;
+      border: none;
+      border: 1px solid white;
+      color: white; }
+    .welcome #sign .signed:focus {
+      outline: none; }
+  .welcome .welcome_text {
+    font-family: "Times New Roman", Times, serif;
+    font-size: x-large;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 40%; }
+    .welcome .welcome_text .underline {
+      margin-left: 60px; }
+
+/*-------------------------------------media queries---------------------------------------------------------*/
+@media only screen and (max-width: 1100px) {
+  #home-flex #user-info {
+    display: none; } }
+
+@media only screen and (max-width: 930px) {
+  #home-flex #post-info {
+    margin: auto; }
+  #home-flex #user-dashboard {
+    display: none; } }
+
+@media only screen and (max-width: 460px) {
+  #home-flex #post-info .card-body textarea {
+    width: 80%; }
+  #home-flex .home-flex-child .card {
+    width: 350px; } }
+
+@media only screen and (max-width: 400px) {
+  #home-flex #post-info .card-body textarea {
+    height: 70px; }
+  #home-flex .home-flex-child .card {
+    width: 330px; } }
+
+@media only screen and (max-width: 380px) {
+  #home-flex .home-flex-child .card {
+    width: 300px; } }
+
+@media only screen and (max-width: 340px) {
+  #home-flex .home-flex-child .card {
+    width: 260px; } }
