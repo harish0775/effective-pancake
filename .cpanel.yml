@@ -1,5 +1,5 @@
 ---
 deployment:
  tasks:
- - export DEPLOYPATH=/home/nodexehw/public_html/
+ - export DEPLOYPATH=/home/nodexehw/repositories/effective-pancake/
  - /bin/cp *$DEPLOYPATH
