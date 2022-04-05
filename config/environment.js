@@ -24,11 +24,11 @@ const development = {
         secure: false,
         auth : {
             user : 'webdev0775@gmail.com',
-            pass : 'abhi@8800webdev'//hidden for sometime
+            pass : 'Abhi@8800web'
         }
-    },
-    google_client_id : "777736857759-7dvvr1q2ng4kqb05oqj9ladc2de033c9.apps.googleusercontent.com",
-    google_client_secret : "BmXEx2QUg_vRRAGx2AJdroQ4",
+    },                  
+    google_client_id : "777736857759-70nufre95bc28mi8dnm5g39iaj82123n.apps.googleusercontent.com",
+    google_client_secret : "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",
     google_call_back_url : "http://localhost:8000/users/auth/google/callback",
     github_cal_back_url : "http://localhost:8000/users/auth/github/callback",
     jwt_secret : 'codeial',
@@ -50,13 +50,13 @@ const production = {
         secure: false,
         auth : {
             user : process.env.Node_Express_GMAIL_USERNAME,
-            pass : '***'//hidden for sometime
+            pass : 'Abhi@8800web'
         }
     },
-    // google_client_id : process.env.Node_Express_GOOGLE_CLIENT_ID,
-    // google_client_secret : process.env.Node_Express_GOOGLE_CLIENT_SECRET,
-    // google_call_back_url : "",
-    // github_cal_back_url : "",
+    google_client_id : process.env.Node_Express_GOOGLE_CLIENT_ID,
+    google_client_secret : process.env.Node_Express_GOOGLE_CLIENT_SECRET,
+    google_call_back_url : "https://node-express.com/users/auth/google/callback",
+    github_cal_back_url : "https://node-express.com/users/auth/google/callback",
     jwt_secret : process.env.Node_Express_JWT_SECRET,
     morgan : {
         mode : 'combined',
