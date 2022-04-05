@@ -1,6 +1,5 @@
 const express = require("express");
 const app = express();
-const port = 3000;
 
 const env = require("./config/environment");
 const logger = require("morgan");
@@ -125,10 +124,10 @@ app.use(customMware.setFlash);
 //use express router-----below assets
 app.use("/", require("./routes/index"));
 
-app.listen(port, function (err) {
-  if (err) {
-    console.log(`error in running server : ${err}`);
-  }
-  console.log(`server is running on port : ${port}`);
-});
-// app.listen();
+// app.listen(port, function (err) {
+//   if (err) {
+//     console.log(`error in running server : ${err}`);
+//   }
+//   console.log(`server is running on port : ${port}`);
+// });
+ app.listen();
