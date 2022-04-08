@@ -1,4 +1,6 @@
 
+
+require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
 const rfs = require('rotating-file-stream');
@@ -13,6 +15,7 @@ const accessLogstream = rfs.createStream('access.log',{
 
 
 const development = {
+   
     name : 'development',
     asset_path : './assets',
     session_cookie_key : 'blahsomething',
@@ -39,6 +42,7 @@ const development = {
 }
 
 const production = {
+     title : process.env.TITLE,
     name : 'production',
     asset_path : process.env.Node_Express_ASSET_PATH,
     session_cookie_key : process.env.Node_Express_SESSION_COOKIE_KEY,
@@ -50,13 +54,15 @@ const production = {
         secure: false,
         auth : {
             user : process.env.Node_Express_GMAIL_USERNAME,
-            pass : 'Abhi@8800web'
+            pass : 'process.env.Node_Express_GMAIL_USERNAME_PASS'
         }
     },
     google_client_id : process.env.Node_Express_GOOGLE_CLIENT_ID,
     google_client_secret : process.env.Node_Express_GOOGLE_CLIENT_SECRET,
-    google_call_back_url : "https://node-express.com/users/auth/google/callback",
-    github_cal_back_url : "https://node-express.com/users/auth/google/callback",
+    google_call_back_url : "http://localhost:8000/users/auth/google/callback"
+,
+    github_cal_back_url : "http://localhost:8000/users/auth/github/callback"
+,
     jwt_secret : process.env.Node_Express_JWT_SECRET,
     morgan : {
         mode : 'combined',

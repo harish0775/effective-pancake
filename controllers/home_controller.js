@@ -1,3 +1,5 @@
+
+const env = require('../config/environment');
 const Post = require('../models/post');
 const User = require('../models/user');
 const friendship = require('../models/friendship');
@@ -29,7 +31,7 @@ module.exports.home = async function(req,res){
 
        
         return res.render('home',{
-            title:"Node-Express home",
+            title:env.title,
             posts : post,
             all_users : user,
             all_friends : signInUserFriends
